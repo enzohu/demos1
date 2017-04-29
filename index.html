@@ -8,15 +8,15 @@
     <script src='bom.js'></script>
 </head>
 <body>
-    <button id='b'>打开</button>
-    <button id='c'>查询</button>
+    <button id='button1'>打开</button>
+    <button id='button2'>查询</button>
 
     <script>
-        b.onclick = function () {
+        button1.onclick = function () {
             $.bom.openAtCenter(300, 300, 'http://baidu.com')
 
         }
-        c.onclick = function () {
+        button2.onclick = function () {
             console.log($.bom.search('a','enzo'))
         }
     </script>
